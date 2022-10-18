@@ -2,7 +2,7 @@ package day3;
 
 public class Example4 {
     public static void main(String[] args) {
-        int x = 7;
+       /*  int x = 7;
         x = x + 1;
         System.out.println(x);
         int numberOfStudents = 26;
@@ -12,8 +12,8 @@ public class Example4 {
         numberOfStudents--;
         System.out.println(numberOfStudents);
         numberOfStudents = numberOfStudents/3;
-        numberOfStudents /=3;
-
+        numberOfStudents /=3; */
+        
     }
     
 }

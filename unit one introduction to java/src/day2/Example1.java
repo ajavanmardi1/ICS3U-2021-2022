@@ -7,7 +7,7 @@ package day2;
 public class Example1 {
 
 public static void main(String[] args) {
- System.out.println("welcome to ap computer science"); 
+ /*System.out.println("welcome to ap computer science"); 
  System.out.println("welcome to ap computer science"); 
  System.out.println("welcome to ap computer science"); 
  System.out.println();   
@@ -20,5 +20,15 @@ public static void main(String[] args) {
  System.out.print("D");
  System.out.print("E");
  System.out.print("F");
+
+
+/* */
+int a = 5;
+
+int b = 8;
+
+int c = 3;
+
+System.out.println(a + b / c * 2);
 }
 }

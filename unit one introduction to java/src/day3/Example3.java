@@ -14,13 +14,14 @@ public class Example3 {
         */
         //what is the sum of the individual digits?
         //ie. 5+7+8+5+6 = 31
-        int sum = digit1 + digit2 + digit3 + digit4 +digit5;
+        /*int sum = digit1 + digit2 + digit3 + digit4 +digit5;
         System.out.println(sum);
         int digit1 = number/10000;
         int digit2 = number % 10000;
         int digit3 = number % 1000/1000;
         int digit4 = number% 100 /10;
         int digit 5 = number%10/1;
+        /* */
 
     }
     
