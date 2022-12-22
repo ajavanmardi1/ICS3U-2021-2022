@@ -31,7 +31,7 @@ public class goFish {
     removeDuplicates(playerTwoHand, 2);
     removeDuplicates(playerThreeHand, 3);
     
-    while(yourScore <10 && playerOneScore < 10 && playerTwoScore < 10 && playerThreeScore < 10)
+    while(yourScore <10 && playerOneScore < 10 && playerTwoScore < 10 && playerThreeScore < 10)//checks if score is 10 and if any players won
     {
       playerTurn();
       cpuTurn(1);
@@ -43,7 +43,7 @@ public class goFish {
       
       
     }
-    if(playAgain())
+    if(playAgain())//resets the game if you want to play again
     {
        yourHand =  getCard() + "" + getCard() + "" + getCard() + "" + getCard() + "" + getCard();
        playerOneHand =  getCard() + "" + getCard() + "" + getCard() + "" + getCard() + "" + getCard();
@@ -62,7 +62,7 @@ public class goFish {
 
 
    
-    private static boolean playAgain() {
+    private static boolean playAgain() {//asks if you want to play again
       while (true) {
          System.out.print("Play Again ([Y]es/[N]o): ");
          String result = in.nextLine().toLowerCase();
@@ -76,7 +76,7 @@ public class goFish {
    }
 
 
-   private static void cpuTurn(int player) {
+   private static void cpuTurn(int player) {//turns
       if(yourScore <10 && playerOneScore < 10 && playerTwoScore < 10 && playerThreeScore < 10)
       {
          int opponent;
@@ -109,7 +109,7 @@ public class goFish {
 
 
 
-   private static void outOfCards() {
+   private static void outOfCards() {//gives you your cards back if you run out of cards. you get 5 cards back
       if(yourHand.length() == 0)
       {
          System.out.println("your ran out of cards, you are going to get 5 more! ");
@@ -148,7 +148,8 @@ public class goFish {
       displayHand(playerThreeHand, true, "player 3 cards: ");
 
       System.out.println("what card do you want? ");
-      String card = in.nextLine();
+      String card = in.nextLine().toUpperCase();
+
       if(yourHand.contains(card))
       {
          System.out.println("which player would you like to ask? ");
@@ -183,7 +184,7 @@ public class goFish {
 
 
 
-   private static void checkHand(int opponent, int asker, String card) {
+   private static void checkHand(int opponent, int asker, String card) {//checks your hand
       String hand = card + "D";
       if(opponent == 0)
       {
@@ -281,7 +282,7 @@ public class goFish {
 
 
 
-   private static void removeDuplicates(String cards, int player) {
+   private static void removeDuplicates(String cards, int player) {//removes the pairs
       cards = cards.replace("10", "t");
       int count = 0;
         String found = "No pairs found.";
@@ -368,7 +369,7 @@ private static String getCard() {
 
     System.out.println(result);
  }
-  private static String getSuit() {
+  private static String getSuit() {//suits of the cards
     int iSuit = (int) (Math.random() * NUM_SUITS) + 1;
 
     if (iSuit == 1)
@@ -385,7 +386,7 @@ private static String getCard() {
 
 
 
-  private static String getValue() {
+  private static String getValue() {//values of the cards
     int iValue = (int) (Math.random() * NUM_VALUES) + 1;
 
     if (iValue == 1)
