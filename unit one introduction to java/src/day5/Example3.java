@@ -1,4 +1,4 @@
-package day5;
+/*package day5;
 
 public class Example3 {
     public static void main(String[] args) {
@@ -7,3 +7,4 @@ public class Example3 {
     }
     
 }
+*/

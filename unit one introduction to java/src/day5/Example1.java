@@ -1,4 +1,4 @@
-package day5;
+/*package day5;
 import java.util.Scanner;
 
 public class Example1 {
@@ -12,3 +12,4 @@ System.out.println("the area of the circle of radius " + radius + "is" + area);
 }
     
 }
+*/

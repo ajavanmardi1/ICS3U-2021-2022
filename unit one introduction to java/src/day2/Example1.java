@@ -23,12 +23,25 @@ public static void main(String[] args) {
 
 
 /* */
-int a = 5;
+/*int a = 5;
 
 int b = 8;
 
 int c = 3;
 
 System.out.println(a + b / c * 2);
+*/
+/*int price = 985;
+double tax = 1.055;
+double total = price * tax;
+System.out.println(total);
+*/
+/*double wins = 110;
+int totalgames = 154;
+double winningpercentage = wins/totalgames*100; 
+System.out.println(winningpercentage);
+*/
+
+
 }
 }
